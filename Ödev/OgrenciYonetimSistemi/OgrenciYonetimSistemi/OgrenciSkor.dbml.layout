@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="OgrenciSkor">
+  <DataContextMoniker Name="/OgrenciSkorDataContext" />
+  <nestedChildShapes>
+    <classShape Id="d2a91e5c-8ff6-46d9-88f7-6f83b245b260" absoluteBounds="3.5, 4, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/OgrenciSkorDataContext/tbYariYil" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aa244fb8-585a-47c7-99c1-4f667ff84185" absoluteBounds="3.515, 4.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="98a11c2d-6afb-4c22-8a01-36ad9ce7e4d0" absoluteBounds="3.5, 6, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/OgrenciSkorDataContext/tbSubject" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ec378238-8c4d-4a4f-a3e6-8dbf28421993" absoluteBounds="3.515, 6.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="92e2f334-f9fe-480d-a67b-5e34d902e7a3" absoluteBounds="0.75, 1.5, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/OgrenciSkorDataContext/tbSinif" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cbed2a31-1954-4617-b86d-d4f9528f338a" absoluteBounds="0.765, 1.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bc5c71cb-fbc5-4505-9635-ef9b23a19594" absoluteBounds="6.25, 1.25, 2, 1.7708968098958329">
+      <DataClassMoniker Name="/OgrenciSkorDataContext/tbOgrenciPuan" />
+      <nestedChildShapes>
+        <elementListCompartment Id="178f600b-5622-428e-922c-569d9050ea17" absoluteBounds="6.265, 1.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fc83795c-7e6e-454b-a771-9ebda4070b84" absoluteBounds="3.5, 1, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/OgrenciSkorDataContext/tbOgrenciler" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ec1e1dba-1db2-4855-b1ec-6ccb22ac8186" absoluteBounds="3.515, 1.46, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 6.69314697265625); (7.25 : 6.69314697265625); (7.25 : 3.02089680989583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/OgrenciSkorDataContext/tbSubject/tbSubject_tbOgrenciPuan" />
+      <nodes>
+        <classShapeMoniker Id="98a11c2d-6afb-4c22-8a01-36ad9ce7e4d0" />
+        <classShapeMoniker Id="bc5c71cb-fbc5-4505-9635-ef9b23a19594" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.59699625651042); (6.7187475 : 4.59699625651042); (6.7187475 : 3.02089680989583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/OgrenciSkorDataContext/tbYariYil/tbYariYil_tbOgrenciPuan" />
+      <nodes>
+        <classShapeMoniker Id="d2a91e5c-8ff6-46d9-88f7-6f83b245b260" />
+        <classShapeMoniker Id="bc5c71cb-fbc5-4505-9635-ef9b23a19594" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 2.13544840494792); (6.25 : 2.13544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/OgrenciSkorDataContext/tbOgrenciler/tbOgrenciler_tbOgrenciPuan" />
+      <nodes>
+        <classShapeMoniker Id="fc83795c-7e6e-454b-a771-9ebda4070b84" />
+        <classShapeMoniker Id="bc5c71cb-fbc5-4505-9635-ef9b23a19594" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.09699625651042); (3.5 : 2.09699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/OgrenciSkorDataContext/tbSinif/tbSinif_tbOgrenciler" />
+      <nodes>
+        <classShapeMoniker Id="92e2f334-f9fe-480d-a67b-5e34d902e7a3" />
+        <classShapeMoniker Id="fc83795c-7e6e-454b-a771-9ebda4070b84" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
