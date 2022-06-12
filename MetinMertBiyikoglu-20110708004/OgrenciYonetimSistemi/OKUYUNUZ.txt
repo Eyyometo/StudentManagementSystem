@@ -1,0 +1,2 @@
+Bu uygulama vs2015'te linq to sql özelliği kullanılarak yapılmıştır.
+Yeni sürümlerde çalışmayabilir.
